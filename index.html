@@ -2,47 +2,27 @@
 <html>
 <head>
 	<title>upload apk</title>
+	<link rel="stylesheet" type="text/css" href="nav.css">
 	<style type="text/css">
-		a {
-			text-decoration: none;
-			margin-left: 20px;
-		}
-		a:link {
-			color: white;
-		}
-		a:visited {
-			color: white;
-		}
-		a:hover {
-			color: red;
-		}
-		nav {
-			background-color: #ADD8E6;
-			padding-left: 20%;
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
 		.center {
-			margin-top: 100px;
-			width: 70%;
 			text-align: center;
-		
-			margin-left: auto;
-			margin-right: auto;
+			margin-top: 100px;
 		}
 
 	</style>
 
 </head>
 <body>
-	<nav>
-		<a href="">apk发布</a>
-		<a href="">登录</a>
-	</nav>
+	<ul>
+		<li><a href="#home">apk发布</a></li>
+		<li><a href="./version.html">版本</a></li>
+		<li style="float: right;margin-right: 40px"><a href="./login.html">登录</a></li>
+	</ul>
 
 	<div class="center">
-		<form>
-			<input type="file" name="apk"/>
+		<form method="post" action="http://www.9394.cool:5885/upload/apk" enctype="multipart/form-data">
+			<input type="file" name="file"/>
+			<input type="submit" name="apk" value="提交"/>
 		</form>
 	</div>
 
